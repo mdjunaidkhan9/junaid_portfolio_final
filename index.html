@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed junaid khan portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: coral;
+            font-family: var(--ff);
+            font-weight: var(--fw);
+        }
+
+        :root {
+            --ff: "Fira Sans", sans-serif;
+            --fw: 800;
+        }
+
+        body {
+            background-color: coral;
+
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+
+            padding-top: 20px;
+            height: 40px;
+            width: 100%;
+            display: flex;
+            gap: 20PX;
+            padding-left: 150px;
+position: relative;
+            padding-bottom: 10px;
+            border-bottom: 10px dashed black;
+            margin-bottom: 20px;
+
+        }
+
+        .ul1 {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            justify-content: end;
+            align-items: self-end;
+            font-family: var(--ff);
+            font-weight: var(--fw);
+            background-color: rgb(243, 239, 239);
+
+        }
+
+        nav .ul1 .img1 {
+            object-fit: fill;
+            height: 25px;
+            width: 30px;
+        }
+
+        nav .ul1 button {
+
+            padding: 10px auto;
+            outline: none;
+            border: none;
+            font-weight: bolder;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+        }
+
+        nav .ul1 li:first-child {
+            margin-top: 25px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 6px 3px 5px blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav .ul2 {
+            list-style-type: none;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            gap: 20px;
+            font-family: var(--ff);
+            font-weight: var(--fw);
+
+            padding-left: 500px;
+        }
+
+        nav .ul2 li a {
+            color: black;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px blue;
+            font-size: 20px;
+            border-radius: 5px;
+            animation: animate 3s ease-in-out;
+        }
+
+        nav .ul2 li a:hover {
+            color: blue;
+        }
+
+        .sidebar {
+            list-style-type: none;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            height: 400px;
+            width: 500px;
+            opacity: 0.8;
+            animation: animate 1s ease-in-out;
+        }
+
+        .sidebar a {
+            color: black;
+            font-family: var(--ff);
+            font-weight: var(--fw);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+        }
+
+        .menu-button {
+            display: none;
+
+        }
+
+        @media screen and (max-width:800px) {
+            nav .ul2 {
+                padding-left: 700px;
+
+            }
+
+
+
+            nav .ul2 li a {
+                color: black;
+                text-decoration: none;
+                box-shadow: 2px 2px 5px blue;
+                font-size: 10px;
+                margin-right: 200px;
+            }
+
+            .ul1 {
+
+                list-style-type: none;
+                font-family: var(--ff);
+                font-weight: var(--fw);
+
+            }
+
+            nav .ul1 img {
+
+                object-fit: fill;
+                height: 10px;
+                width: 20px;
+                display: inline;
+                animation: animate 3s ease-in-out;
+            }
+
+            .conus {
+                margin-left: 20px;
+                animation: animate 3s ease-in-out;
+            }
+        }
+
+        .nameandimg {
+            padding-top: 20px;
+            background-color: coral;
+            height: 300px;
+            width: 100vw;
+            display: flex;
+            gap: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nameandimg img {
+            margin-top: 20px;
+            height: 305px;
+            width: 300px;
+            border-radius: 50%;
+            object-fit: fill;
+            background-color: coral;
+            box-shadow: 5px 0px 8px blue;
+            animation: animate 3s ease-in-out;
+        }
+
+        .nameandimg img:hover {
+            background-color: blue;
+
+        }
+
+        .nameandimg h2 {
+            text-shadow: 2px 2px 5px blue;
+            animation: animate 3s ease-in-out;
+        }
+
+        .nameandimg p {
+            font-size: 20px;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            text-shadow: 2px 2px 5px blue;
+            animation: animate 3s ease-in-out;
+
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: animate 3s ease-in-out;
+
+        }
+
+        .p1 {
+            padding-left: 145px;
+            margin-top: 30px;
+            font-size: 30px;
+            animation: animate 3s ease-in-out;
+        }
+
+        .skills h2 {
+
+            text-align: center;
+            animation: animate 3s ease-in-out;
+        }
+
+        .inskills {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            padding-left: 700px;
+            padding-top: 20px;
+            height: 50px;
+            width: 80%;
+            animation: animate 3s ease-in-out;
+        }
+
+        .inskills .line1 {
+            background-color: blue;
+            height: 10px;
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        .inskills .line1 .ins {
+            height: 10px;
+            background-color: black;
+            width: 80%;
+            border-radius: 5px;
+        }
+
+        .inskills .html {
+            padding-left: 375px;
+        }
+
+        .inskills .css {
+            padding-left: 280px;
+        }
+
+        .inskills .java {
+            padding-left: 280px;
+        }
+
+        .inskills .mad {
+            padding-left: 280px;
+        }
+
+        .inskills .cyber {
+            padding-left: 330px;
+        }
+
+        .inskills p {
+            display: inline;
+        }
+
+        .inskills .per {
+            padding-left: 370px;
+            display: inline;
+        }
+
+
+        .pro {
+            margin-top: 20px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 400px;
+            margin-left: 500px;
+            gap: 20px;
+            animation: 3s ease-in-out;
+        }
+
+        #pre {
+            margin-left: 670px;
+            font-size: 40px;
+        }
+
+        .conus {
+
+            height: 360px;
+            width: 100vw;
+            padding-left: 140px;
+            font-size: 30px;
+            animation: 3s ease-in-out;
+        }
+
+        input {
+            margin-bottom: 20px;
+            height: 50px;
+            width: 400px;
+            border: 2px solid blue;
+            border-radius: 5px;
+            font-size: large;
+            padding-left: 70px;
+            box-shadow: 22px 2px 5px blue;
+            display: flex;
+            animation: animate 3s ease-in-out;
+            grid-template-columns: 200px;
+        }
+
+        input:hover {
+            background-color: blue;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .footer {
+            background: linear-gradient(to right, rgb(236, 73, 13) 50%, blue);
+            height: 85px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: animate 3s ease-in-out;
+        }
+
+        .footer li {
+            display: flex;
+            list-style-type: none;
+
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            animation: animate 3s ease-in-out;
+        }
+
+        .footer li a {
+            color: black;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px blue;
+            font-size: 20px;
+            border-radius: 5px;
+            animation: animate 3s ease-in-out;
+        }
+
+        .footer li a:hover {
+            color: blue;
+        }
+
+        .ok li {
+            background: linear-gradient(to right, rgb(236, 73, 13) 50%, blue);
+            height: 50px;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            animation: animate 3s ease-in-out;
+        }
+
+        .part3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pro {
+            background-color: white;
+        }
+
+        .pro img {
+            height: 150px;
+            padding: 0;
+
+        }
+
+        .pro p {
+            background-color: white;
+            color: #8c8c90;
+            text-align: center;
+            font-size: 15px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+
+        }
+
+        .pro h3 {
+            background-color: white;
+            text-align: center;
+            color: #2d3d67;
+            font-size: 2em;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+        }
+
+        .pro h6 {
+            background-color: blue;
+            color: rgba(166, 172, 186, 0.71);
+            font-size: 1.2em;
+        }
+
+        .part1 {
+            margin-bottom: 150px;
+        }
+
+        .arrimg {
+            margin-left: 00px;
+            margin-top: 100px;
+            margin-bottom: 0px;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .main2 .arrimg {
+            margin-top: 0px;
+
+        }
+        .pro a{
+            background-color: white;
+                text-align: center;
+            }
+        .main2 h1 {
+
+
+
+            animation: animate1 3s ease-in-out;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes animate1 {
+            0% {
+                width: 0px;
+                opacity: 0;
+            }
+
+            100% {
+                width: 400px;
+                opacity: 1;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            nav .ul2 {
+                padding-left: 200px;
+                display: none;
+            }
+
+            #pre {
+                margin-left: 160px;
+                font-size: 40px;
+            }
+
+            .menu-button {
+                display: inline;
+            }
+
+            .sidebar {
+                list-style-type: none;
+                margin-right: 1000px; 
+                background-color: rgba(255, 255, 255, 0.15);
+                height: 100px;
+                width: 100px;
+                opacity: 0.8;
+            }
+
+            .nameandimg {
+                padding-top: 100px;
+                background-color: coral;
+                height: 300px;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                gap: 00px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nameandimg img {
+                margin-top: 20px;
+                height: 185px;
+                width: 160px;
+                object-fit: fill;
+                background-color: coral;
+                box-shadow: 5px 0px 8px blue;
+            }
+
+            .nameandimg img:hover {
+                background-color: blue;
+            }
+
+            .nameandimg h2 {
+                text-shadow: 2px 2px 5px blue;
+            }
+
+            .nameandimg p {
+                padding-top: 20px;
+                height: 330px;
+                width: 250px;
+                margin-bottom: 30px;
+                text-shadow: 2px 2px 5px blue;
+            }
+
+            .skills {
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .skills h2 {
+                margin-top: 120px;
+                text-align: center;
+            }
+
+            .inskills {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+
+                padding-left: 200px;
+                padding-top: 20px;
+                height: 50px;
+                width: 80%;
+            }
+
+            .inskills .line1 {
+                background-color: blue;
+                height: 10px;
+                width: 40%;
+                border-radius: 5px;
+            }
+
+            .inskills .line1 .ins {
+                height: 10px;
+                background-color: black;
+                width: 80%;
+                border-radius: 5px;
+            }
+
+            .inskills p {
+                display: inline;
+            }
+
+            .inskills .html {
+                padding-left: 70px;
+            }
+
+            .inskills .css {
+                padding-left: 60px;
+            }
+
+            .inskills .java {
+                padding-left: 60px;
+            }
+
+            .inskills .mad {
+                padding-left: 60px;
+            }
+
+            .inskills .cyber {
+                padding-left: 62px;
+            }
+
+            .inskills p {
+                display: inline;
+            }
+
+            .pro {
+
+                background-color: blue;
+                display: flex;
+                flex-direction: column;
+
+                height: 400px;
+                width: 70vw;
+                margin-left: 60px;
+                animation: animate 3s ease-in-out;
+
+            }
+
+            .pro p {
+                display: flex;
+                flex-direction: column;
+                font-size: 30px;
+                height: 25px;
+                margin-left: 0px;
+            }
+
+            .pro .p1 {
+
+                margin-left: 20px;
+
+                background-color: pink;
+                height: 800px;
+                width: 80vw;
+            }
+
+            .conus {
+                height: 360px;
+                width: 100vw;
+                margin-top: 20px;
+                padding-left: 50px;
+                font-size: 20px;
+                animation: animate 3s ease-in-out;
+            }
+
+            label {
+                margin-top: 20px;
+            }
+
+            input {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 50px;
+                width: 200px;
+                border: 2px solid blue;
+                border-radius: 5px;
+                font-size: large;
+                padding-left: 00px;
+                box-shadow: 22px 2px 5px blue;
+            }
+
+            .footer li a {
+                color: black;
+                text-decoration: none;
+
+                font-size: 20px;
+                border-radius: 5px;
+            }
+
+            .footer li a:hover {
+                color: blue;
+            }
+
+            .main2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 85px;
+            }
+
+            .main2 h1 {
+                animation: animate1 3s ease-in;
+            }
+
+            .main2 .img1 {
+                margin-top: 20px;
+                height: 105px;
+                width: 160px;
+                object-fit: fill;
+                background-color: coral;
+                box-shadow: 5px 0px 8px blue;
+            }
+
+            .pro {
+                background-color: white;
+            }
+
+            .pro img {
+                height: 150px;
+                padding: 0;
+                background-color: white;
+            }
+
+            .pro p {
+                background-color: white;
+                color: #8c8c90;
+                text-align: center;
+                font-size: 15px;
+
+
+            }
+            .pro a{
+                margin-top:20px ;
+                text-align: center;
+            }
+            .pro h3 {
+                background-color: white;
+                text-align: center;
+                color: #2d3d67;
+                font-size: 2em;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="ul1">
+            <li><img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                    class="img1"><button>Mohammed junaid khan</button></li>
+
+        </ul>
+        <ul class="ul2">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+
+            <li><a href="#con">contact us</a></li>
+
+        </ul>
+        <ul>
+            <li id="showdetails" class="menu-button" style="list-style-type: none;"><a href="#"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li id="hidebar" style="color: white;"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#con">contact us</a></li>
+        </ul>
+    </nav>
+
+    <div class="main2" >
+        <h1>Mohammed junaid khan</h1>
+        <img class="img1"
+            src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1721001600&semt=sph">
+        <a href="#home"><img class="arrimg" src="https://cdn-icons-png.flaticon.com/128/3416/3416111.png"
+                id="skill"></a>
+    </div>
+
+    <div class="part1">
+
+        <h2 style="color: black; text-align: center;padding-top:50px ;" id="home">About me</h2>
+        <div class="nameandimg">
+
+            <P>
+                I "Mohammed junaid khan" I am 20 year old,B.tech(CSE) student studied at Presidency University.
+                I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning
+                new
+                things; the more, the better.
+            </P>
+            <img
+                src="https://media.licdn.com/dms/image/C5603AQG6vww_iWWGjA/profile-displayphoto-shrink_400_400/0/1655093824731?e=1726704000&v=beta&t=xXjP6unKCphPGAFGVCe1buw9V5c3JgS7XR3sXWTBwzs" />
+
+
+
+        </div>
+
+    </div>
+    <div class="part2">
+        <div class="skills" id="skill">
+            <h2 id="skill">My skills</h2>
+            <div class="inskills">
+                <p>Html</p>
+                <p class="html">80%</p>
+                <div class="line1">
+
+                    <div class="ins"></div>
+                </div>
+            </div>
+            <div class="inskills">
+                <p>Css</p>
+                <p class="css">60%</p>
+                <div class="line1">
+
+                    <div class="ins" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="inskills">
+                <p>Java</p>
+                <p class="java">60%</p>
+                <div class="line1">
+
+                    <div class="ins" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="inskills">
+                <p>MAD</p>
+                <p class="mad">60%</p>
+                <div class="line1">
+
+                    <div class="ins" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="inskills">
+                <p>Cyber Security</p>
+                <p class="cyber">70%</p>
+                <div class="line1">
+
+                    <div class="ins" style="width: 70%;" id="project"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="part3">
+        <p class="p1">Projects</p>
+        <div class="promain">
+            <button id="pre">&lt;</button>
+            <button id="nex" style="font-size: 40px;">&gt;</button>
+            <div class="pro" id="pro"></div>
+
+        </div>
+    </div>
+    <div class="part4" style="margin-top: 50px;">
+        <div class="conus" id="con">
+            <p>Contact Us</p>
+
+            <label>Name</label> <input type="text" placeholder="Enter your name">
+            <label>Email</label> <input type="email" placeholder="Enter your email">
+            <label>Contact Number</label> <input type="email" placeholder="Enter your nummber">
+        </div>
+
+    </div>
+    <div class="footer">
+
+        <li><a href="https://www.instagram.com/junaid_md_9/" target="_blank">Instagram</a></li>
+        <li><a href="https://x.com/Junaid__m_d">X</a></li>
+        <li><a href="https://github.com/mdjunaidkhan9">Github</a></li>
+
+    </div>
+    <div class="ok">
+        <li>copyright &copy; | +91 8217687212</li>
+
+    </div>
+    <script>
+        let showdetails1 = document.getElementById('showdetails');
+        let hidebar1 = document.getElementById('hidebar');
+        hidebar1.addEventListener("click", () => {
+            let sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+            let sidebarq = document.querySelector(".menu-button");
+            sidebarq.style.display = "flex";
+        });
+        showdetails1.addEventListener("click", () => {
+            let sidebar = document.querySelector(".sidebar");
+            let sidebarq = document.querySelector(".menu-button");
+            sidebar.style.display = "inline";
+            sidebarq.style.display = "none";
+        });
+
+        let pro = document.getElementById('pro');
+        let pre = document.getElementById('pre');
+        let next = document.getElementById('nex');
+        const testimonials = [
+            {
+                name: "Polling Application",
+                image: "https://miro.medium.com/v2/resize:fit:860/1*M-7PkS5EnTOQIuAmfRKH6Q.png",
+                testimonial: `It count the total number of votes and displays the result in the percentage form.`,
+                links: "https://mdjunaidkhan9.github.io/polling.application/"
+            },
+
+            {
+                name: "Meme Generator",
+                image: "https://miro.medium.com/v2/resize:fit:860/1*M-7PkS5EnTOQIuAmfRKH6Q.png",
+                testimonial: `It uses the Api's to generate the meme if we click on button it display the random meme.`,
+                links: "https://mdjunaidkhan9.github.io/meme_generate-1-/"
+            },
+        ];
+        let c = 0;
+        function showdetails() {
+            const testimonialr = testimonials[c];
+            pro.innerHTML = `
+        
+        <h3>${testimonialr.name}</h3>
+        <img src="${testimonialr.image}" />
+        
+        <p>${testimonialr.testimonial}</p>
+        <a href="${testimonialr.links}" target="_blank">Project link</a>
+    `;
+
+        }
+        function updatetes(dire) {
+            c += dire;
+            if (c < 0) {
+                c = testimonials.length - 1;
+            }
+            else if (c >= testimonials.length) {
+                c = 0;
+            }
+            showdetails();
+        }
+        pre.addEventListener("click", () => updatetes(-1));
+        next.addEventListener("click", () => updatetes(1));
+
+        showdetails(); 
+    </script>
+</body>
+
+</html>
